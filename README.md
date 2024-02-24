@@ -1,3 +1,3 @@
 ## MOOD BASED MOVIE RECCOMENDATION SYSTEM
 
-### This follows Hyrbid Approach
+### This follows a Hyrbid Approach
