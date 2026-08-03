@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forgot Password page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Set the body height to full viewport height */
+            display: flex;
+            justify-content: center; /* Center align content horizontally */
+            align-items: center; /* Center align content vertically */
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .register-container {
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            height: 12rem;
+            justify-content: center;
+            background-color: rgba(18, 1, 1, 0.5); /* White background for register container with some opacity */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(42, 41, 41, 0.5); /* Adding a subtle shadow */
+        }
+
+        h5 {
+            color: red;
+        }
+
+        h2{
+            color: rgb(250, 9, 9);
+            text-shadow: 2px 1px 1px black;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body style="background-image: url('{{ url_for('static', filename='loginbg.jpg') }}');">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 mt-4 register-container justify-content-center" >
+                <h2>Email Does not Exist in the data base</h2>
+                <button type="button" class="buttons"><a class="btn" href="/register">Register Now</a></button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

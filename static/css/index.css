@@ -1,0 +1,60 @@
+.cover {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-grow: 1fr;
+   flex-shrink: 3fr;
+   gap: 7rem;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.box {
+   width: 20vw;
+   height: 15vh;
+   border: 1px solid rgb(209, 136, 2);
+}
+
+.image{
+   
+   height: 5rem;
+   width: 5rem;
+   background-color: black;
+   border: 1px solid rgb(10, 1, 1);
+   border-radius: 50%;
+}
+
+.box {
+   display: flex;
+   justify-content: space-around;   
+   align-items: center;
+}
+
+.movies {
+   width: 6.5rem;
+   height: 2.5rem;
+   color: white;
+   background-color: black;
+   font-size: 1.5em;
+   font-family: 'Times New Roman', Times, serif ;
+}
+
+h2 {
+   color: white;
+   font-size: 2.25rem;
+}
+
+
+h3{
+   display: block;
+   text-align: center;
+   color: yellow;
+   font-size: 1.75rem;
+}
+
+.image-01 {
+   width: 100%;
+   
+
+}

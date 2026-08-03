@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../static/css/register.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<!-- multistep form -->
+<form id="multistepsform" enctype="multipart/form-data" action="/register" method="POST">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Account Setup</li>
+    <li>Mood Preferences-1</li>
+    <li>Mood Preferences-2</li>
+
+  </ul>
+  <!-- fieldsets -->
+  <fieldset class="step-01">
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle"></h3>
+    <input type="text" name="name" placeholder="Enter your Username" />
+    <input type="email" name="email" placeholder="Enter your Email" />
+    <input type="password" name="password" placeholder="Enter your Password" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="step-02">
+    <h2 class="fs-title">Mood Preferences-1</h2>
+    <h3 class="fs-subtitle">To understand your preferences</h3>
+    <label for="type-of-movies">Type of Movies you watch? *</label> 
+    <select id="type-of-movies" class="mp-1" name="type_of_movies">
+      <optgroup>
+        <option value="Regional Films">Regional Films</option>
+        <option value="International Films">International Films</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Angry-movie">During moments of frustration or anger, which movies help you cool down and unwind? *</label> <br>
+    <select id="Angry-movie" class="mp-1" name="Angry">
+      <optgroup>
+        <option value="88 Minutes">88 Minutes</option>
+        <option value="The Prestige">The Prestige</option>
+        <option value="Closer">Closer</option>
+        <option value="Harry Potter and the Goblet of Fire">Harry Potter and the Goblet of Fire</option>
+        <option value="Ice Age: The Meltdown">Ice Age: The Meltdown</option>
+        <option value="Iron Man">Iron Man</option>
+        <option value="Sivaji: The Boss">Sivaji: The Boss</option>
+        <option value="Vedam">Vedam</option>
+        <option value="Pudhupettai">Pudhupettai</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Bored-movie">When you're looking to cure boredom, what kind of movies do you turn to? *</label> <br>
+    <select id="Bored-movie" class="mp-1" name="Bored">
+      <optgroup>
+        <option value="Under the Sand">Under the Sand</option>
+        <option value="The Terminal">The Terminal</option>
+        <option value="Rocky Balboa">Rocky Balboa</option>
+        <option value="Sunshine">Sunshine</option>
+        <option value="Kill Bill: Vol. 1">Kill Bill: Vol. 1</option>
+        <option value="TMNT">Teenage Mutant Ninja Turtles</option>
+        <option value="Spider-Man 2">Spider-Man 2</option>
+        <option value="Oosaravelli">Oosaravelli</option>
+        <option value="Chatrapathi">Chatrapathi</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Peace-movie">When you're in the mood for a calming movie night, what kind of films do you usually go for? *</label> <br>
+    <select id="Peace-movie" class="mp-1" name="Peace">
+      <optgroup>
+        <option value="Cars">Cars</option>
+        <option value="Blood Diamond">Blood Diamond</option>
+        <option value="The Aviator">The Aviator</option>
+        <option value="Hellboy">Hellboy</option>
+        <option value="Mr Perfect">Mr Perfect</option>
+        <option value="Indiana Jones and the Kingdom of the Crystal Skull">Indiana Jones and the Kingdom of the Crystal Skull</option>
+        <option value="Atharintiki Daaredi">Atharintiki Daaredi</option>
+        <option value="Sillunu Oru Kaadhal">Sillunu Oru Kaadhal</option>
+        <option value="Vikramarkudu">Vikramarkudu</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Happy-movie">When you're in a great mood, which films do you find most enjoyable? *</label> <br>
+    <select id="Happy-movie" class="mp-1" name="Happy">
+      <optgroup>
+        <option value="The Butterfly Effect">The Butterfly Effect</option>
+        <option value="300: Rise of an Empire">300: Rise of an Empire</option>
+        <option value="Mere Brother Ki Dulhan">Mere Brother Ki Dulhan</option>
+        <option value="Mr. Bean's Holiday">Mr. Bean's Holiday</option>
+        <option value="The Lord of the Rings: The Return of the King">The Lord of the Rings: The Return of the King</option>
+        <option value="The Mummy: Tomb of the Dragon Emperor">The Mummy: Tomb of the Dragon Emperor</option>
+        <option value="Hulk">Hulk</option>
+        <option value="Jaane Tu... Ya Jaane Na">Jaane Tu... Ya Jaane Na</option>
+        <option value="Singam">Singam</option>
+        </optgroup>
+    </select>
+    <br>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset class="step-03">
+    <h2 class="fs-title">Mood Preferences-2</h2>
+    <h3 class="fs-subtitle">To understand your preferences</h3>
+    <label for="sad-movie">What kind of films that helps you process your emotions or provides a sense of catharsis when you're feeling sad? *</label> 
+    <select id="sad-movie" class="mp-1" name="Sad">
+      <optgroup>
+        <option value="My Name Is Bruce">My Name Is Bruce</option>
+        <option value="The Devil Wears Prada">The Devil Wears Prada</option>
+        <option value="Terminator Salvation">Terminator Salvation</option>
+        <option value="Pirates of the Caribbean: The Curse of the Black Pearl">Pirates of the Caribbean: The Curse of the Black Pearl</option>
+        <option value="The Matrix Revolutions">The Matrix Revolutions</option>
+        <option value="The Simpsons Movie">The Simpsons Movie</option>
+        <option value="Khaleja">Khaleja</option>
+        <option value="Kal Ho Naa Ho">Kal Ho Naa Ho</option>
+        <option value="Pelli Choopulu">Pelli Choopulu</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Terror-movie">What type of movies do you enjoy when you want to delve into themes of fear, suspense, or the unknown? *</label> <br>
+    <select id="Terror-movie" class="mp-1" name="Terror">
+      <optgroup>
+        <option value="Terminator 3: Rise of the Machines">Terminator 3: Rise of the Machines</option>
+        <option value="Ghost Rider">Ghost Rider</option>
+        <option value="National Treasure">National Treasure</option>
+        <option value="Don 2: The King is Back">Don 2: The King is Back</option>
+        <option value="The Departed">The Departed</option>
+        <option value="Simhadri">Simhadri</option>
+        <option value="Bajrangi Bhaijaan">Bajrangi Bhaijaan</option>
+        <option value="Anbe Sivam">Anbe Sivam</option>
+        <option value="Paruthiveeran">Paruthiveeran</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Rom-movie">In moments of love and affection, which movies resonate with you? *</label> <br>
+    <select id="Rom-movie" class="mp-1" name="Romantic">
+      <optgroup>
+        <option value="Revolutionary Road">Revolutionary Road</option>
+        <option value="Nuvvostanante Nenoddantana">Nuvvostanante Nenoddantana</option>
+        <option value="Ae Dil Hai Mushkil">Ae Dil Hai Mushkil</option>
+        <option value="O Kadhal Kanmani">O Kadhal Kanmani</option>
+        <option value="Vaaranam Aayiram">Vaaranam Aayiram</option>
+        <option value="Premam">Premam</option>
+        <option value="Bommarillu">Bommarillu</option>
+        <option value="7/G Rainbow Colony">7/G Rainbow Colony</option>
+        <option value="Vinnaithaandi Varuvaayaa">Vinnaithaandi Varuvaayaa</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Thrill-movie">What type of movies get your heart racing when you're in the mood for excitement and thrills? *</label> <br>
+    <select id="Thrill-movie" class="mp-1" name="Thrilled">
+      <optgroup>
+        <option value="Terminator 3: Rise of the Machines">Terminator 3: Rise of the Machines</option>
+        <option value="Ocean's Twelve">Ocean's Twelve</option>
+        <option value="Aliens vs Predator: Requiem">Aliens vs Predator: Requiem</option>
+        <option value="Harry Potter and the Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban</option>
+        <option value="X-Men Origins: Wolverine">X-Men Origins: Wolverine</option>
+        <option value="Baahubali 2: The Conclusion">Baahubali 2: The Conclusion</option>
+        <option value="War of the Worlds">War of the Worlds</option>
+        <option value="1 - Nenokkadine">1 - Nenokkadine</option>
+        <option value="Subramaniapuram">Subramaniapuram</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="Disgust-movie">When you're having a rough day or not feeling quite yourself, do you have go-to movies that help lift your spirits? *</label> <br>
+    <select id="Disgust-movie" class="mp-1" name="Disgust">
+      <optgroup>
+        <option value="Terminator 3: Rise of the Machines">Terminator 3: Rise of the Machines</option>
+        <option value="My Name Is Bruce">My Name Is Bruce</option>
+        <option value="Batman Begins">Batman Begins</option>
+        <option value="Pirates of the Caribbean: Dead Man's Chest">Pirates of the Caribbean: Dead Man's Chest</option>
+        <option value="Star Wars: Episode III - Revenge of the Sith">Star Wars: Episode III - Revenge of the Sith</option>
+        <option value="Eega">Eega</option>
+        <option value="Gabbar Singh">Gabbar Singh</option>
+        <option value="Gentleman">Gentleman</option>
+        <option value="Rab ne Bana Di Jodi">Rab ne Bana Di Jodi</option>
+        </optgroup>
+    </select>
+    <br>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <button type="submit" class="previous action-button">submit</button>
+  </fieldset>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script  src="../static/js/script.js"></script>
+
+</body>
+</html>

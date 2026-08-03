@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .centered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+body{
+background-size:cover;
+
+}
+h2,p{
+color:black;
+}
+
+  </style>
+</head>
+<body style="background-image: url('{{ url_for('static', filename='homepage.jpg') }}');">
+
+<div class="container">
+  <div class="centered">
+    <div class="col-sm-8">
+      <h2>User Dashboard</h2>
+      <p><b style='color:yellow;'>Name: </b> {{user.name }}</p>
+      <p><b style='color:yellow;'>Email: </b> {{user.email }}</p>
+<p><b style='color:yellow;'>ID: </b> {{user.id }}</p>
+<p><b style='color:yellow;'>type_of_movies: </b> {{user.type_of_movies }}</p>
+<p><b style='color:yellow;'>Angry: </b> {{user.Angry }}</p>
+<p><b style='color:yellow;'>Bored: </b> {{user.Bored }}</p>
+<p><b style='color:yellow;'>Peace: </b> {{user.Peace }}</p>
+<p><b style='color:yellow;'>Happy: </b> {{user.Happy }}</p>
+<p><b style='color:yellow;'>Sad: </b> {{user.Sad }}</p>
+<p><b style='color:yellow;'>Terror: </b> {{user.Terror }}</p>
+<p><b style='color:yellow;'>Romantic: </b> {{user.Romantic }}</p>
+<p><b style='color:yellow;'>Thrilled: </b> {{user.Thrilled }}</p>
+<p><b style='color:yellow;'>Digust: </b> {{user.Disgust }}</p>
+      <a href="/logout" class="btn btn-dark">Logout</a>
+      <a href="/Recommended" class="btn btn-info">Camera</a>
+<a href='/deleteaccount' class="btn btn-info">Delete Account</a>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

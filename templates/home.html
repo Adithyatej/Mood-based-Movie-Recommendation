@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            text-decoration: none;
+        }        
+        body {
+            background-image: url(../static/loginbg.jpg);
+            position:relative;
+        }
+
+        .class {
+            position: relative;
+        }
+        .navbar {
+            background-color: rgb(229, 9, 20);
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+
+        }
+        li a{
+            color: aliceblue;
+            font-size: 18px;
+            /* font-weight: b; */
+            margin-right: 30px;
+        }
+        .section {
+            width: 600px;
+            height: 300px;
+            background-color: rgba(0,0,0,0.5);
+            border:none ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            top:20vw;
+            left: 27vw;
+        }
+        .buttons {
+            background-color:  rgb(229, 9, 20);;
+            height: 2rem;
+            width: 6rem;
+            border: none;
+            border-radius: 3px;
+        }
+        .btn {
+            background-color: rgb(229, 9, 20);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div><h1>MovieforMood.com</h1></div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="section">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Ready to watch?</p>
+        <button type="button" class="buttons"><a class="btn" href="/register">Get Started</a></button>
+        </div>
+    </div>
+
+
+</body>
+</html>

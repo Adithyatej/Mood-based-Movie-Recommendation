@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background:url(../loginbg.jpg);
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+}
+#multistepsform label {
+  color: white;
+  font-weight: bold;
+
+}
+.mp-1 {
+  
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#multistepsform {
+  width: 1000px;
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#multistepsform .step-01 {
+  background: rgba(0, 0, 0, 0.5);
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 10%;
+  position: relative;
+
+}
+
+#multistepsform .step-02,
+#multistepsform .step-03 {
+  background: rgba(0, 0, 0, 0.5);
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 10%;
+  position: relative;
+  height:500px;
+}
+#multistepsform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#multistepsform input,
+#multistepsform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #502c2c;
+  font-size: 13px;
+}
+#multistepsform input:focus,
+#multistepsform textarea:focus {
+  border-color: #679b9b;
+  outline: none;
+  color: #637373;
+}
+#multistepsform .action-button {
+  width: 100px;
+  background: #f40202;
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#multistepsform .action-button:hover,
+#multistepsform .action-button:focus {
+  background-color: rgba(237, 0, 0, 0.949)
+  color: #fff;
+}
+#multistepsform .fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+#multistepsform .fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #ece2e2;
+  margin-bottom: 20px;
+}
+#multistepsform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+#multistepsform #progressbar li {
+  list-style-type: none;
+  color: #679b9b;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+#multistepsform #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  background: #000202;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+#multistepsform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #dcfbfb;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+#multistepsform #progressbar li:first-child:after {
+  content: none;
+}
+#multistepsform #progressbar li.active {
+  color: #f7f4f4;
+}
+#multistepsform #progressbar li.active:before, #multistepsform #progressbar li.active:after {
+  background: #dd0505;
+  color: white;
+}
